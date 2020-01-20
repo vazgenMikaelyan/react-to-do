@@ -1,0 +1,10 @@
+.icon-block{
+    cursor: pointer;    
+    line-height: normal;
+    vertical-align: middle;
+}
+.icon-block,
+.icon-block svg {
+    max-width: 25px;
+    max-height: 25px;
+}
