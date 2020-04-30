@@ -3,32 +3,32 @@ export const  mockTodos = {
       {
         id: 81632937,
         label: "Get up early",
-        seleced: true
+        isDone: true
       },
       {
         id: 425132549,
         label: "do some meditation",
-        seleced: true
+        isDone: true
       },
       {
         id: 632979655,
         label: "eat a healthy breakfast",
-        seleced: false
+        isDone: true
       },
       {
         id: 95140890,
         label: "drink plenty of water",
-        seleced: false
+        isDone: false
       },
       {
         id: 951114890,
         label: "exercise",
-        seleced: false
+        isDone: false
       },
       {
         id: 32156454216,
         label: "have fun",
-        seleced: false
+        isDone: false
       }
     ]
   };

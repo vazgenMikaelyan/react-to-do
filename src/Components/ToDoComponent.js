@@ -22,38 +22,38 @@ class ToDoComponent extends React.PureComponent {
       const item = {
         id: Date.now(),
         label: targetElement.value,
-        seleced: false
-      }  
+        isDone: false
+      }; 
       targetElement.value = targetElement.defaultValue;
       this.setState((prevState) => ({
-        items: prevState.items.concat(item),
+        items: prevState.items.concat(item)
       }));
     }
   }
 
   handleClear() {
     let items = this.state.items.map((e, i) => {
-      e.seleced = false
+      e.isDone = false;
       return e;
     });
-    this.setState({ items: items })
+    this.setState({ items: items });
   }
 
   handleSelect(id) {
     let items = this.state.items.map((e, i) => {
       if (id === e.id) {
-        e.seleced = !e.seleced;
+        e.isDone = !e.isDone;
       }
       return e;
     });
-    this.setState({ items: items })
+    this.setState({ items: items });
   }
 
   handleDelete(id) {
     let items = this.state.items.filter((e, i) => {
       return id !== e.id;
     });
-    this.setState({ items: items })
+    this.setState({ items: items });
   }
 
   render() {

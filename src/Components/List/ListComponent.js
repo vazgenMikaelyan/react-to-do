@@ -16,11 +16,11 @@ class ListComponent extends React.PureComponent {
     return (
       <ul className="todo-list">
         {this.props.items.map((item, index) => {
-          const type = item.seleced ? "checked" : "unChecked";
+          const type = item.isDone ? "checked" : "unChecked";
           return (  
             <li className="todo-list-item" key={index}>
               <IconComponent type={type} onClick={this.handleSelect.bind(this, item.id)}/>
-              <div className={`item-lable ${item.seleced ? 'selected' : '' }`}>
+              <div className={`item-lable ${item.isDone ? 'selected' : '' }`}>
                 {item.label}
               </div>
               <IconComponent type="trash" onClick={this.handleDelete.bind(this, item.id)}/>
